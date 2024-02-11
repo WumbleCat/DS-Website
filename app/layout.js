@@ -1,9 +1,7 @@
 // components/Layout.js
 
-import './globals.css'
 import React from 'react';
 import { Montserrat } from '@next/font/google';
-import Link from 'next/link';
 
 const Inter = Montserrat({
   subsets: ['latin'],
@@ -12,15 +10,13 @@ const Inter = Montserrat({
 
 const Layout = ({ children }) => {
   return (
-    <div className={Inter.className}>
-    <div className="container mx-auto">
-      {/* <Link href="/vision">Vision</Link>
-      <Link href="/documents">Documents</Link>
-      <Link href="links">Links</Link>
-      <Link href="contact-us">Contact</Link> */}
-      {children}
-    </div>
-    </div>
+    <html lang="en">
+      <body className={Inter.className}>
+        {/* <div className="container mx-auto"> */}
+        {children}
+        {/* </div> */}
+      </body>
+    </html>
   );
 }
 
