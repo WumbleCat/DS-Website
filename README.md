@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bristol Data Science Website
 
-## Getting Started
+## About
 
-First, run the development server:
+This project serves as an unofficial information hub created by and for students of the University of Bristol's Data Science course. It aims to facilitate communication, share resources, and enhance the overall learning experience for students in the program.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Our Plan to Enhance the Data Science Course**: An outline of initiatives proposed by student representatives to improve the course, including feedback sessions, industry workshops, and enhanced collaboration among students.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Documents**: A repository of previous meeting notes and important documents related to the course.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Useful Links**: A compilation of links to relevant resources such as Google Drives, Excel Sheets, and other materials that support the Data Science curriculum.
 
-## Learn More
+- **Contact Us**: Provides contact details for the course representatives, making it easy for students to reach out with questions, suggestions, or feedback.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## To do
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Style all pages
 
-## Deploy on Vercel
+- Add link back to main page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Style main page better (maybe e.g. background color, remove some drop shadow, change images on links)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Some Bristol Data Science Logo to replace favicon
+
+- Scope: maybe the website is not just for year 1 students, but all undergrad students?
+
+- Announce/promote website

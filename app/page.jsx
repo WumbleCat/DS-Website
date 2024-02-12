@@ -43,8 +43,8 @@ const Home = () => {
         </div>
 
         <div className="bg-white rounded-lg mt-5 pt-4 pb-2 px-4 text-center">
-          <h1 className="text-5xl font-roboto">University of Bristol</h1>
-          <h1 className="text-5xl font-roboto">Data Science</h1>
+          <h1 className="text-5xl font-roboto font-semibold">University of Bristol</h1>
+          <h1 className="text-5xl font-roboto font-semibold">Data Science</h1>
           <div className='text-gray-500 pt-2'>
             <p>Unofficial website made by students from UoB Data Science course year 1 </p>
             <p>as an information hub for other year 1 students.</p>
