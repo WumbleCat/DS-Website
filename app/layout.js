@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { Montserrat } from '@next/font/google';
+import Image from 'next/image';
+
 import "./globals.css";
 
 const Inter = Montserrat({
@@ -13,9 +15,7 @@ const Layout = ({ children }) => {
   return (
     <html lang="en">
       <div className={Inter.className}>
-        <div className="container mx-auto">
           {children}
-        </div>
       </div>
     </html>
   );
