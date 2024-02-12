@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Montserrat } from '@next/font/google';
+import "./globals.css";
 
 const Inter = Montserrat({
   subsets: ['latin'],
@@ -11,11 +12,11 @@ const Inter = Montserrat({
 const Layout = ({ children }) => {
   return (
     <html lang="en">
-      <body className={Inter.className}>
-        {/* <div className="container mx-auto"> */}
-        {children}
-        {/* </div> */}
-      </body>
+      <div className={Inter.className}>
+        <div className="container mx-auto">
+          {children}
+        </div>
+      </div>
     </html>
   );
 }

@@ -17,11 +17,12 @@ export default function Home() {
     ];
 
     return (
+        <div className={Inter.className}>
             <div className="flex flex-col items-center justify-center mt-10 mx-3">
                 <div className="border border-gray-400 rounded-full overflow-hidden">
                     {/* <img src="/images/uob_logo.jpg" alt="University of Bristol Logo" className="mx-auto h-32 w-32" /> */}
                     <Image
-                        src="images/uob_logo.jpg"
+                        src="/images/uob_logo.jpg"
                         alt=""
                         width={100}
                         height={100}
@@ -43,7 +44,7 @@ export default function Home() {
                                     {/* <img src="/images/uob_logo.jpg" alt="img" className='w-8 h-8 mr-2' /> */}
 
                                     <Image
-                                        src="images/uob_logo.jpg"
+                                        src="/images/uob_logo.jpg"
                                         width={20}
                                         height={20}
                                         className="w-8 h-8 mr-2"
@@ -62,5 +63,6 @@ export default function Home() {
                     ))}
                 </div>
             </div>
+        </div>
     );
 }
