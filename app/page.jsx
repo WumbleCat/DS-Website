@@ -33,7 +33,7 @@ const Home = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full bg-white bg-opacity-50">
-        <div className="border border-gray-400 rounded-full overflow-hidden">
+        {/* <div className="border border-gray-400 rounded-full overflow-hidden"> */}
           {/* <Image
             src="/images/uob_logo.jpg"
             alt="University of Bristol Logo"
@@ -41,7 +41,7 @@ const Home = () => {
             height={100}
             className="mx-auto h-32 w-32 font-bold shadow-2xl"
           /> */}
-        </div>
+        {/* </div> */}
 
         <div className="bg-white rounded-lg mt-5 pt-4 pb-2 px-4 text-center">
           <h1 className="text-5xl font-roboto font-semibold">University of Bristol</h1>
