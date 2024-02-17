@@ -2,7 +2,7 @@ import React from 'react';
 import { Montserrat } from '@next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFile, FaList, FaLink, FaAddressBook, FaCalendar } from 'react-icons/fa';
+import { FaFile, FaList, FaLink, FaAddressBook } from 'react-icons/fa';
 
 const Inter = Montserrat({
   subsets: ['latin'],
@@ -11,7 +11,6 @@ const Inter = Montserrat({
 
 const Home = () => {
   const pills = [
-    // { title: 'Assignments', desc: 'See upcoming assignments', link: '/assignments', image: FaCalendar },
     { title: 'Our Vision and Plan', desc: 'Our plans for the current academic year and the future years', link: '/plan', image: FaList },
     { title: 'Previous Documents', desc: 'Links to previous SSLC meeting notes', link: '/documents', image: FaFile },
     { title: 'Useful Links', desc: 'Links to relevant information for the course. Ex Google Drives, Excel Sheets etc.', link: '/links', image: FaLink },
@@ -53,7 +52,7 @@ const Home = () => {
         </div>
 
         <div className="p-10">
-        {pills.map((pill, index) => (
+          {pills.map((pill, index) => (
             <div key={index} className="border border-gray-400 rounded-lg p-4 mx-4 my-8 flex flex-col md:flex-row shadow-lg bg-white">
               <div className="flex flex-col mx-3">
                 <div className="flex items-center">
@@ -68,7 +67,6 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-
           ))}
         </div>
       </div>
