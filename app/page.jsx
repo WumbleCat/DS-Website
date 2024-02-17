@@ -11,7 +11,7 @@ const Inter = Montserrat({
 
 const Home = () => {
   const pills = [
-    { title: 'Assignments', desc: 'See upcoming assignments', link: '/assignments', image: FaCalendar },
+    // { title: 'Assignments', desc: 'See upcoming assignments', link: '/assignments', image: FaCalendar },
     { title: 'Our Vision and Plan', desc: 'Our plans for the current academic year and the future years', link: '/plan', image: FaList },
     { title: 'Previous Documents', desc: 'Links to previous SSLC meeting notes', link: '/documents', image: FaFile },
     { title: 'Useful Links', desc: 'Links to relevant information for the course. Ex Google Drives, Excel Sheets etc.', link: '/links', image: FaLink },
@@ -33,15 +33,15 @@ const Home = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full bg-white bg-opacity-50">
-        {/* <div className="border border-gray-400 rounded-full overflow-hidden"> */}
-          {/* <Image
+        <div className="border border-gray-400 rounded-full overflow-hidden">
+          <Image
             src="/images/uob_logo.jpg"
             alt="University of Bristol Logo"
             width={100}
             height={100}
             className="mx-auto h-32 w-32 font-bold shadow-2xl"
-          /> */}
-        {/* </div> */}
+          />
+        </div>
 
         <div className="bg-white rounded-lg mt-5 pt-4 pb-2 px-4 text-center">
           <h1 className="text-5xl font-roboto font-semibold">University of Bristol</h1>
@@ -53,20 +53,21 @@ const Home = () => {
         </div>
 
         <div className="p-10">
-          {pills.map((pill, index) => (
-            <Link href={pill.link}>
-              <div key={index} className="border border-gray-400 rounded-lg p-2 mx-4 my-8 flex flex-col md:flex-row shadow-lg bg-white">
-                <div className="flex flex-col mx-3">
-                  <div className="flex items-center">
-                    <pill.image size={25} className='pr-2'/>
-                    <h2 className="text-xl font-semibold">{pill.title}</h2>
-                  </div>
-                  <p className="text-gray-600">{pill.desc}</p>
+        {pills.map((pill, index) => (
+            <div key={index} className="border border-gray-400 rounded-lg p-4 mx-4 my-8 flex flex-col md:flex-row shadow-lg bg-white">
+              <div className="flex flex-col mx-3">
+                <div className="flex items-center">
+                  <pill.image size={25} className='pr-2'/>
+                  <h2 className="text-xl font-semibold">{pill.title}</h2>
                 </div>
-                <div className="ml-auto mt-4 md:mt-0">
-                </div>
+                <p className="text-gray-600">{pill.desc}</p>
               </div>
-            </Link>
+              <div className="ml-auto mt-4 md:mt-0">
+                <Link href={pill.link} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded inline-flex items-center">
+                  More info
+                </Link>
+              </div>
+            </div>
 
           ))}
         </div>
