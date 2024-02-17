@@ -7,6 +7,11 @@ export default function Assignments() {
         project: 'Online Quiz 1',
         dueDate: 'Thursday, 22nd February at 12:00'
       },
+      {
+        course: 'Linear Models',
+        project: 'Coursework 5',
+        dueDate: 'Tuesday, 27th February at 12:00'
+      },
     {
       course: 'Intro to Coding',
       project: 'Online Project 3',
