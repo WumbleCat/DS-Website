@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Documents() {
+export default function Links() {
     const links = [
         {
             "Title": "Calendar (deadlines)",
@@ -26,7 +26,7 @@ export default function Documents() {
 
     return (
         <div className='c   ontainer mx-auto px-4 py-8'>
-            <h2 className='text-2xl font-bold mb-4'>Useful Documents</h2>
+            <h2 className='text-2xl font-bold mb-4'>Useful Links</h2>
             {links.map((doc, index) => (
                 <div key={index} className='mb-4'>
                     <h3 className='text-xl font-bold mb-1'>{doc.Title}</h3>

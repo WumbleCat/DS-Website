@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function documents() {
+export default function Documents() {
   return (
     <div>documents</div>
   )
