@@ -11,37 +11,33 @@ const Inter = Montserrat({
 
 const Home = () => {
   const pills = [
-    { title: 'Our Vision and Plan', desc: 'Our plans for the current academic year and the future years', link: '/plan', image: FaList },
-    { title: 'Previous Documents', desc: 'Links to previous SSLC meeting notes', link: '/documents', image: FaFile },
-    { title: 'Useful Links', desc: 'Links to relevant information for the course. Ex Google Drives, Excel Sheets etc.', link: '/links', image: FaLink },
-    { title: 'Contact Us', desc: 'Contact details for the course reps', link: '/contact', image: FaAddressBook },
+    { title: 'Our Vision and Plan', desc: 'Our plans for the current academic year and the future years', link: '/plan', icon: <FaList size={25} /> },
+    { title: 'Previous Documents', desc: 'Links to previous SSLC meeting notes', link: '/documents', icon: <FaFile size={25} /> },
+    { title: 'Useful Links', desc: 'Links to relevant information for the course. Ex Google Drives, Excel Sheets etc.', link: '/links', icon: <FaLink size={25} /> },
+    { title: 'Contact Us', desc: 'Contact details for the course reps', link: '/contact', icon: <FaAddressBook size={25} /> },
   ];
 
   return (
-    <div className="relative h-screen">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/UoB_building.jpg" 
+    <div className="flex flex-col items-center justify between">
+      <div className='relative w-full'>
+        <div className='absolute -z-10 w-full'>
+          <Image 
+          src="/images/UoB_building.jpg"
           alt="background image"
-          quality={100}
-          fill
-          sizes="100vw"
-          style={{
-            objectFit: 'cover',
-          }}
-        />
-      </div>
+          className='w-full h-full'
+          width={1000}
+          height={1000}/>
+        </div>
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full bg-opacity-50">
+        <div className='max-w-screen-lg m-auto h-auto py-5 px-5 my-10 text-center text-2xl rounded-2xl'>
+
+        <div className="relative z-10 flex flex-col items-center justify-center h-full bg-opacity-50">
         <div className="border border-gray-400 rounded-full overflow-hidden">
           <Image
             src="/images/uob_logo.jpg"
             alt="University of Bristol Logo"
             width={100}
             height={100}
-            className="mx-auto h-20 w-20 md:h-full md:w-full font-bold shadow-2xl"
           />
         </div>
 
@@ -54,13 +50,12 @@ const Home = () => {
           </div>
         </div>
 
-
         <div className="p-10">
           {pills.map((pill, index) => (
             <div key={index} className="border border-gray-400 rounded-lg p-4 mx-4 my-8 flex flex-col md:flex-row shadow-lg bg-white">
               <div className="flex flex-col mx-3">
                 <div className="flex items-center">
-                  <pill.image size={25} className='pr-2'/>
+                  {pill.icon}
                   <h2 className="text-xl font-semibold">{pill.title}</h2>
                 </div>
                 <p className="text-gray-600">{pill.desc}</p>
@@ -74,6 +69,16 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+        </div>
+
+        
+
+      </div>
+      {/* Background Image */}
+
+      {/* Content */}
+      
     </div>
   );
 };
